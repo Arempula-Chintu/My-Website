@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS S3 Static Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #ff9900;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: #ff9900;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        footer {
+            background: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My AWS Website</h1>
+    <p>Hosted on Amazon S3 Static Website Hosting</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Hello from AWS S3!</h1>
+    <p>This website is hosted using Amazon S3 Static Website Hosting.</p>
+    <a href="#" class="btn">Learn More</a>
+</section>
+
+<section class="services">
+    <div class="card">
+        <h3>Amazon EC2</h3>
+        <p>Scalable virtual servers in the cloud.</p>
+    </div>
+
+    <div class="card">
+        <h3>Amazon S3</h3>
+        <p>Secure and highly available object storage.</p>
+    </div>
+
+    <div class="card">
+        <h3>CloudFront</h3>
+        <p>Fast content delivery worldwide.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 AWS Demo Website | Hosted on Amazon S3</p>
+</footer>
+
+</body>
+</html>
