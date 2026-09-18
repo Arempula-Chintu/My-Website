@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chintu Arempula | Aspiring AWS Cloud Engineer & DevOps Enthusiast</title>
+    <meta name="description" content="Portfolio of Chintu Arempula, an aspiring AWS Cloud Engineer and DevOps Enthusiast. Specializing in cloud infrastructure, automation, and CI/CD pipelines.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Grid Effect -->
+    <div class="grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Chintu<span class="text-accent">.aws</span></span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#shell" class="nav-link">Cloud Shell</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link nav-btn">Contact</a>
+            </nav>
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        AWS Cloud & DevOps Fresher
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Chintu Arempula</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typed-text"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Motivated fresher specializing in deploying, automating, and scaling high-availability systems on AWS. Passionate about Infrastructure as Code (IaC) and hands-on CI/CD pipelines.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#shell" class="btn btn-secondary">Launch Shell</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="mailto:arempulachintu09@gmail.com" class="social-link" title="Email Chintu">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/chintu-arempula" target="_blank" class="social-link" title="LinkedIn Profile">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.8v8.37h2.8v-4.87c0-.26.05-.5.14-.69a1.62 1.62 0 0 1 1.48-1.07c.82 0 1.15.62 1.15 1.53v5.1m-10.74-9.5a1.63 1.63 0 0 1-1.62-1.62 1.63 1.63 0 0 1 1.62-1.63 1.63 1.63 0 0 1 1.63 1.63 1.63 1.63 0 0 1-1.63 1.62m1.4 9.5V10.13h-2.8v8.37h2.8z"/></svg>
+                        </a>
+                        <a href="https://github.com/chintu-arempula" target="_blank" class="social-link" title="GitHub Profile">
+                            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+                        </a>
+                        <span class="hero-location">
+                            <svg class="icon-small" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            Hyderabad, Telangana
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- High-tech simulated architecture stack -->
+                    <div class="architecture-canvas">
+                        <div class="arch-layer client-side">
+                            <div class="arch-node internet" title="Internet Gateway">
+                                <div class="node-icon">🌐</div>
+                                <span class="node-label">IGW</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrows arrow-v"></div>
+                        <div class="arch-layer public-subnet">
+                            <span class="layer-badge">Public Subnet</span>
+                            <div class="arch-node alb" title="Application Load Balancer">
+                                <div class="node-icon">⚖️</div>
+                                <span class="node-label">ALB</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrows arrow-split"></div>
+                        <div class="arch-layer private-subnet">
+                            <span class="layer-badge">Private Subnet (Auto Scaling)</span>
+                            <div class="subnet-nodes">
+                                <div class="arch-node ec2" title="EC2 Application Instance A">
+                                    <div class="node-icon">💻</div>
+                                    <span class="node-label">EC2 App A</span>
+                                </div>
+                                <div class="arch-node ec2" title="EC2 Application Instance B">
+                                    <div class="node-icon">💻</div>
+                                    <span class="node-label">EC2 App B</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arch-arrows arrow-split-db"></div>
+                        <div class="arch-layer db-subnet">
+                            <div class="arch-node rds" title="RDS Database (Multi-AZ Master)">
+                                <div class="node-icon">🗄️</div>
+                                <span class="node-label">RDS (MySQL)</span>
+                            </div>
+                            <div class="arch-node s3" title="Amazon S3 Static Assets">
+                                <div class="node-icon">🪣</div>
+                                <span class="node-label">S3 Assets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Summary</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card card-glow">
+                        <p class="summary-paragraph">
+                            I am a motivated and detail-oriented computer science graduate with hands-on experience deploying and managing secure, high-availability applications on Amazon Web Services (AWS) through dedicated personal projects. 
+                        </p>
+                        <p class="summary-paragraph">
+                            With a strong foundation in core AWS services, cloud networking, Linux server administration, and infrastructure scripting, I focus on automation, scalability, and security. I thrive on translating manual deployment struggles into clean, reproducible code pipelines.
+                        </p>
+                        <p class="summary-paragraph">
+                            As an entry-level Cloud & DevOps Engineer, I look forward to contributing a quick-learning mindset, a deep passion for modern hosting standards, and active dedication to maintaining clean infrastructure operations.
+                        </p>
+                    </div>
+                    <div class="about-metrics">
+                        <div class="metric-card">
+                            <div class="metric-num text-accent">Active</div>
+                            <div class="metric-label">AWS Free-Tier Practice</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-num">3-Tier</div>
+                            <div class="metric-label">Architecture Built</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-num">Near 0</div>
+                            <div class="metric-label">Deployment Overhead (CI/CD)</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-num">IaC</div>
+                            <div class="metric-label">Terraform / CFN Basics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <!-- AWS Skills -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon cloud-icon">
+                                <svg viewBox="0 0 24 24" class="svg-skill"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                            </div>
+                            <h3>Cloud (AWS)</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>EC2 (Compute)</span><div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div></li>
+                            <li><span>S3 (Storage)</span><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></li>
+                            <li><span>VPC & Networking</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                            <li><span>IAM (Identity Access)</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                            <li><span>RDS & Databases</span><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></li>
+                            <li><span>Lambda (Serverless)</span><div class="bar-bg"><div class="bar-fill" style="width: 70%"></div></div></li>
+                            <li><span>CloudWatch & Alarms</span><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></li>
+                            <li><span>Route 53 & CloudFront</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                            <li><span>ASG & Load Balancer</span><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- DevOps & Infrastructure -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon devops-icon">
+                                <svg viewBox="0 0 24 24" class="svg-skill"><path d="M22 12c0-2.38-.6-4.67-1.75-6.67L19 7c.63 1.5 1 3.2 1 5 0 4.41-3.59 8-8 8s-8-3.59-8-8c0-1.8.37-3.5 1-5l-1.25-1.67C2.6 7.33 2 9.62 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10zM12 4c1.8 0 3.5.37 5 1l1.25-1.67C16.67 2.6 14.38 2 12 2 6.48 2 2 6.48 2 12l1.75 1.33c-.63-1.5-1-3.2-1-5.33 0-4.41 3.59-8 8-8zM16.5 10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-9 0c.83 0 1.5-.67 1.5-1.5S8.33 7.5 7.5 7.5 6 8.17 6 9s.67 1.5 1.5 1.5z"/></svg>
+                            </div>
+                            <h3>DevOps & Tools</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Git & GitHub</span><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></li>
+                            <li><span>Docker Containers</span><div class="bar-bg"><div class="bar-fill" style="width: 70%"></div></div></li>
+                            <li><span>Jenkins (CI/CD Basics)</span><div class="bar-bg"><div class="bar-fill" style="width: 65%"></div></div></li>
+                            <li><span>GitHub Actions</span><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></li>
+                            <li><span>Terraform (IaC Basics)</span><div class="bar-bg"><div class="bar-fill" style="width: 60%"></div></div></li>
+                            <li><span>Linux Server Administration</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                        </ul>
+                    </div>
+
+                    <!-- Scripting & Networking -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon code-icon">
+                                <svg viewBox="0 0 24 24" class="svg-skill"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                            </div>
+                            <h3>Programming & Network</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Shell Scripting (Bash)</span><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div></div></li>
+                            <li><span>SQL (Databases)</span><div class="bar-bg"><div class="bar-fill" style="width: 70%"></div></div></li>
+                            <li><span>TCP/IP & DNS</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                            <li><span>Subnetting & Gateways</span><div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div></li>
+                            <li><span>Load Balancing & HTTPs</span><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive AWS Console Terminal Section -->
+        <section id="shell" class="terminal-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Interactive Cloud Shell</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-desc">Experience a live environment simulation. Run commands or click quick commands below to launch infrastructure projects dynamically.</p>
+                </div>
+                
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn btn-close"></span>
+                            <span class="terminal-btn btn-minimize"></span>
+                            <span class="terminal-btn btn-expand"></span>
+                        </div>
+                        <div class="terminal-title">chintu@aws-cloud-shell:~ (Virtual Session)</div>
+                        <div class="terminal-status"><span class="pulse-indicator"></span>Online</div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line">Welcome to Chintu's AWS Cloud Shell simulator. (v1.0.4)</div>
+                        <div class="terminal-line">Type <span class="text-accent">help</span> or click one of the quick shortcuts to query.</div>
+                        <div class="terminal-line">&nbsp;</div>
+                        <div class="terminal-output-container" id="terminalOutputs"></div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">chintu@aws-cloud-shell:~$</span>
+                            <input type="text" id="terminalInput" class="terminal-input" autofocus autocomplete="off" spellcheck="false" placeholder="type a command...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="terminal-shortcuts">
+                    <span class="shortcut-label">Quick Commands:</span>
+                    <button class="shortcut-btn" data-cmd="help">help</button>
+                    <button class="shortcut-btn" data-cmd="neofetch">neofetch</button>
+                    <button class="shortcut-btn" data-cmd="skills">skills</button>
+                    <button class="shortcut-btn" data-cmd="projects">projects</button>
+                    <button class="shortcut-btn" data-cmd="deploy">deploy</button>
+                    <button class="shortcut-btn" data-cmd="clear">clear</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="projects-container">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-type">AWS Infrastructure</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Scalable Web App Hosting on AWS</h3>
+                            <p class="project-description">
+                                Designed and deployed a highly-available, 3-tier web application architecture inside a secure, custom VPC. Utilized an Application Load Balancer and Auto Scaling to process fluctuating client traffic reliably.
+                            </p>
+                            
+                            <ul class="project-points">
+                                <li>Implemented multi-AZ architecture with public (ALB) and private (EC2 app and RDS database) subnets for enhanced firewalling.</li>
+                                <li>Configured target groups and health checks on ALB to orchestrate routing only to healthy EC2 server nodes.</li>
+                                <li>Utilized least-privilege principles to isolate S3 assets, EC2 roles, and RDS backend tables via secure IAM profiles.</li>
+                                <li>Monitored traffic spikes using custom CloudWatch alarm thresholds and dashboard charts.</li>
+                            </ul>
+                            
+                            <div class="project-tech">
+                                <span>VPC</span>
+                                <span>EC2</span>
+                                <span>RDS MySQL</span>
+                                <span>ALB & ASG</span>
+                                <span>S3</span>
+                                <span>CloudWatch</span>
+                            </div>
+                        </div>
+                        <div class="project-visual-card">
+                            <div class="project-badge-top">Live Simulation Available in Shell</div>
+                            <div class="flow-chart">
+                                <div class="flow-step">
+                                    <div class="flow-icon">🌐</div>
+                                    <span>Client Traffic</span>
+                                </div>
+                                <div class="flow-arrow">➡️</div>
+                                <div class="flow-step highlight">
+                                    <div class="flow-icon">⚖️</div>
+                                    <span>ALB (Public)</span>
+                                </div>
+                                <div class="flow-arrow">➡️</div>
+                                <div class="flow-step">
+                                    <div class="flow-icon">💻</div>
+                                    <span>EC2 ASG (Private)</span>
+                                </div>
+                                <div class="flow-arrow">➡️</div>
+                                <div class="flow-step">
+                                    <div class="flow-icon">🗄️</div>
+                                    <span>RDS MySQL (Private)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reverse">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-type">DevOps & CI/CD</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Static Website Hosting & CI/CD Pipeline</h3>
+                            <p class="project-description">
+                                Set up a serverless web hosting environment for static websites leveraging Amazon S3 static hosting, CloudFront distribution for global speed-ups, and a fully automated continuous deployment pipeline.
+                            </p>
+                            
+                            <ul class="project-points">
+                                <li>Configured Amazon CloudFront CDN to cache content globally, decreasing download times while securing the origin S3 bucket.</li>
+                                <li>Created custom GitHub Actions workflows that automatically build, optimize, and sync changes directly to S3 buckets.</li>
+                                <li>Provisioned secure custom domains via Route 53 with SSL/TLS certificate automation via AWS Certificate Manager (ACM).</li>
+                                <li>Applied bucket policies restricting public folder access, using Origin Access Identities (OAI) for routing.</li>
+                            </ul>
+                            
+                            <div class="project-tech">
+                                <span>S3 Static Hosting</span>
+                                <span>CloudFront</span>
+                                <span>Route 53</span>
+                                <span>ACM (SSL)</span>
+                                <span>GitHub Actions</span>
+                            </div>
+                        </div>
+                        <div class="project-visual-card">
+                            <div class="cicd-timeline">
+                                <div class="cicd-step">
+                                    <div class="cicd-badge">Commit</div>
+                                    <p>Developer pushes code to Git repo</p>
+                                </div>
+                                <div class="cicd-connector"></div>
+                                <div class="cicd-step">
+                                    <div class="cicd-badge run">Actions Build</div>
+                                    <p>Sync code directly to S3 assets</p>
+                                </div>
+                                <div class="cicd-connector"></div>
+                                <div class="cicd-step">
+                                    <div class="cicd-badge finish">CDN Invalidate</div>
+                                    <p>CloudFront pushes changes globally</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education & Information</h2>
+                    <div class="section-underline"></div>
+                </div>
+                
+                <div class="edu-grid">
+                    <!-- School Timeline -->
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-header">
+                                <span class="timeline-date">2021 - 2025</span>
+                                <h3 class="timeline-degree">B.Tech in Computer Science and Engineering</h3>
+                            </div>
+                            <h4 class="timeline-school">Jawaharlal Nehru Technological University (or affiliated College)</h4>
+                            <p class="timeline-desc">
+                                Specialized in core computing workflows, databases, networking parameters, and cloud technologies.
+                            </p>
+                            <div class="coursework">
+                                <h5>Key Coursework:</h5>
+                                <div class="course-tags">
+                                    <span>Cloud Computing</span>
+                                    <span>Computer Networks</span>
+                                    <span>Operating Systems</span>
+                                    <span>Database Management Systems</span>
+                                    <span>System Administration</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional info cards -->
+                    <div class="info-sidebar">
+                        <div class="info-card">
+                            <h3 class="info-card-title">Practice Ethos</h3>
+                            <p>Active developer on the AWS Free Tier, replicating deployment setups to maintain familiarity with cloud cost metrics and service boundaries. Code files are systematically pushed and managed on GitHub repositories.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3 class="info-card-title">Continuous Upskilling</h3>
+                            <p>Regular contributor to local coding networks, technical writeups, and workshops targeting Containerization (Docker), Infrastructure as Code (Terraform), and automated scripting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-desc">Have a question or looking to build some scalable systems together? Drop a message below!</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-sidebar">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg viewBox="0 0 24 24" class="svg-contact"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="contact-info-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:arempulachintu09@gmail.com" class="contact-value">arempulachintu09@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg viewBox="0 0 24 24" class="svg-contact"><path d="M6.62 10.79a15.149 15.149 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="contact-info-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+919515979011" class="contact-value">+91-9515979011</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg viewBox="0 0 24 24" class="svg-contact"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            </div>
+                            <div class="contact-info-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Hyderabad, Telangana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="formName">Your Name</label>
+                                    <input type="text" id="formName" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formEmail">Email Address</label>
+                                    <input type="email" id="formEmail" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="formSubject">Subject</label>
+                                <input type="text" id="formSubject" name="subject" required placeholder="Cloud engineering inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="formMessage">Message</label>
+                                <textarea id="formMessage" name="message" rows="5" required placeholder="Hey Chintu, I would like to discuss a project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message
+                                <svg class="submit-spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+                            </button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Chintu Arempula. All rights reserved.</p>
+            <p class="footer-note">Designed with ❤️. Powered by Cloud Principles.</p>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
